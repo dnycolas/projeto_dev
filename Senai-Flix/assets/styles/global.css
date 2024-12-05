@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+/* Importa a fonte "Ubuntu" do Google Fonts, incluindo várias variações de peso e itálico. */
+
+* {
+    margin: 0px;
+    /* Remove a margem padrão de todos os elementos */
+    padding: 0px;
+    /* Remove o preenchimento (padding) padrão de todos os elementos */
+    box-sizing: border-box;
+    /* Ajusta o box model para incluir padding e bordas no cálculo de largura e altura */
+    font-size: 14px;
+    /* Define o tamanho da fonte como 14px */
+    font-family: "Ubuntu";
+    /* Define a fonte "Ubuntu" como a fonte principal */
+}
+
+/* @media screen and (max-width: 600px) {
+    * {
+      font-size: 8px !important; /* Ajusta o tamanho da fonte para 8px em telas pequenas (máximo de 600px)
+    }
+} */
+
+header {
+    position: absolute;
+    /* Posiciona o header de forma absoluta, sobrepondo outros elementos */
+    width: 100%;
+    /* Define a largura do header como 100% da tela */
+    background: rgb(0, 0, 0);
+    /* Define a cor de fundo como preta */
+    background: -moz-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    /* Gradiente linear para navegadores antigos (Mozilla) */
+    background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    /* Gradiente linear para navegadores antigos (Webkit) */
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    /* Gradiente linear padrão (do preto para transparente) */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#ffffff", GradientType=1);
+    /* Gradiente para navegadores antigos (IE) */
+    padding: 15px;
+    /* Adiciona 15px de padding (espaçamento interno) */
+    display: flex;
+    /* Define o layout como flexbox */
+    justify-content: space-between;
+    /* Distribui o conteúdo de forma que haja espaço entre os itens no header */
+}
+
+header span {
+    color: white;
+    /* Define a cor do texto dentro de <span> no header como branca */
+}
+
+header nav a {
+    color: white;
+    /* Define a cor dos links dentro do <nav> no header como branca */
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+    margin-left: 10px;
+    /* Adiciona uma margem de 10px à esquerda de cada link */
+}
+
+.banner {
+    background-image: url("../../assets/styles/imagens/Interstellar.jpg ");
+    /* Define a imagem de fundo do banner */
+    background-size: cover;
+    /* Faz com que a imagem cubra toda a área disponível */
+    background-position: center;
+    /* Centraliza a imagem de fundo */
+    width: 100vw;
+    /* Define a largura do banner como 100% da largura da janela de visualização */
+    height: 100vh;
+    /* Define a altura do banner como 100% da altura da janela de visualização */
+    display: flex;
+    /* Usa flexbox para o layout */
+    align-items: flex-end;
+    /* Alinha os itens dentro do banner na parte inferior */
+    padding-left: 10px;
+    /* Adiciona 10px de padding à esquerda */
+    padding-bottom: 200px;
+    /* Adiciona 200px de padding na parte inferior */
+}
+
+
+.filme {
+    background-image: url("../../assets/styles/imagens/Interstellar.jpg ");
+    /* Define a imagem de fundo do banner */
+    background-size: cover;
+    /* Faz com que a imagem cubra toda a área disponível */
+    background-position: center;
+    /* Centraliza a imagem de fundo */
+   display: flex;
+    /* Usa flexbox para o layout */
+    align-items: flex-end;
+    /* Alinha os itens dentro do banner na parte inferior */
+
+}
+
+.filme iframe
+{
+
+ margin: #000 10px ;
+
+}
+
+
+.banner h1 {
+    color: white;
+    /* Define a cor do texto do <h1> dentro do banner como branca */
+    font-size: 3em;
+    /* Define o tamanho da fonte como 3 vezes o tamanho padrão */
+}
+
+.banner p {
+    color: white;
+    /* Define a cor do texto do <p> dentro do banner como branca */
+    width: 60vw;
+    /* Define a largura do parágrafo como 60% da largura da janela de visualização */
+}
+
+.filmes-series {
+    width: 100vw;
+    height: auto;
+    min-height: 200px;
+    background-color: #000;
+
+    padding: 10px;
+
+}
+
+.card img {
+    height: 200px;
+    width: 150px;
+
+    justify-content: space-between;
+
+    padding: 5px;
+}
+
+
+.filmes-series h2 {
+    color: #fff;
+}
+
+.filmes-series .card-container {
+
+    width: 100%;
+
+    margin-top: 10px;
+
+    display: flex;
+
+    justify-content: space-around;
+
+}
+
+.filmes-series {
+    background-size: cover;
+    background-position: center;
+
+    margin-right: 10px;
+
+    padding: 20px 120px 20px 120px;
+}
+
+footer {
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer p {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+footer img {
+    color: #fff;
+    margin: 5px;
+}
+
+footer .icons-container {
+    display: flex;
+}
+
+footer .icons-container img {
+    height: 50px;
+}
+
+
+.descricao {
+
+    width: 100%;
+
+    padding: 50px 180px 0 180px;
+
+    display: flex;
+
+    background: black        ;
+
+
+}
+
+.descricao h1
+{
+
+font-size: 40px;
+
+}
+
+.descricao p, h1
+{
+
+    color: white;
+}
+
+.descricao_filme {
+
+    margin-left: 180px;
+
+}
+
+.publico {
+
+    display: flex;
+
+}
+
+
+.publico img
+{
+
+margin: 20px 25px 0 0;
+
+}
+
+.publico a
+{
+
+margin: 20px 0 2px 0;
+
+color: white;
+
+}
+
+.publico p
+{
+
+margin: 20px 0 0 25px;
+
+color: white;
+
+}
+
+.descricao_filme p
+{
+
+    margin-top: 20px;
+
+}
+
+.descricao_filme button
+{
+
+ margin: 20px 40px 0 0 ;
+
+}
+
+
+.atores 
+{
+
+background-color: #000;
+
+
+display: flex;
+
+
+}
+
+.elenco , .elenco1
+{
+
+
+    display: flex;
+
+}
